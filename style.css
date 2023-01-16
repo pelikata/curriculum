@@ -86,3 +86,48 @@ div {
     color: black;
     display: inline;
 }
+
+@media screen and (max-width: 768px) {
+    #main {
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+
+    img {
+        float: none;
+        width: 50%;
+        margin-bottom: 40px;
+    }
+
+    #skills, #personal {
+        width: 100%;
+        margin-left: 0px;
+    };
+
+    #personal ul {
+        padding-left: -30px;
+    };
+}
+
+@media screen and (max-width: 600px) {
+    img {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    img {
+        width: 90%;
+    }
+
+    div {
+        width: 80%;
+    }
+
+    #skills ul, #personal ul {
+        margin-left: -40px;
+        width: 100%;
+}
+}
